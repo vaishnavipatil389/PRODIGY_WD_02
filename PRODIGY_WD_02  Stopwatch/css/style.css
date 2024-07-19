@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "helvetica neue";
+  margin: 0px;
+}
+body {
+  background-image: url("../asserts/mike-van-den-bos-g-dHEm7h_Xk-unsplash.jpg");
+  background-repeat:repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  text-align: center;
+  max-width: 550px;
+  margin: 85px 505px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+  height: 77vh;
+  backdrop-filter: blur(8.5px);
+}
+
+li {
+  color: white;
+  list-style-type: none;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: -120px;
+  margin-left: 540px;
+  margin-top: 50px;
+}
+
+.heading > li {
+  list-style: none;
+  color: #0fc;
+  font-size: 3.9em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  filter: blur(0.1px);
+  border-top: 2px solid rgb(0, 229, 255);
+}
+.heading:hover li {
+  animation: animate 2s linear forwards;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  /* z-index: 10; */
+  color: rgba(0, 255, 204, 0.742);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg) translate(0px);
+    opacity: 1;
+    filter: blur(1px);
+  }
+  100% {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(10px);
+  }
+}
+
+.heading li:nth-child(1) {
+  animation-delay: 0s;
+}
+.heading li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.heading li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.heading li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.heading li:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.heading li:nth-child(6) {
+  animation-delay: 1s;
+}
+.heading li:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.heading li:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.heading li:nth-child(9) {
+  animation-delay: 1.8s;
+}
+.box {
+  display: flex;
+  padding: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 150%;
+  background: rgba(255, 255, 255, 0.242);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  left: -3%;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  animation-name: shine;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  width: 220px;
+  height: 100px;
+  border: 1px solid rgb(249, 246, 246);
+}
+@keyframes shine {
+  0%,
+  100% {
+    box-shadow: 0px 0px 30px 12px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 50px 3px #ffffff;
+  }
+}
+
+.time {
+  color: rgb(254, 252, 252);
+  font-size: 35px;
+  font-weight: 500;
+}
+
+button {
+  border-color: transparent;
+  background: transparent;
+  color: #fff;
+  padding: 10px;
+  margin: 12px;
+  border-radius: 5px;
+  border-width: 0;
+  width: 70px;
+  box-shadow: 0px 0px 60px -1px rgba(241, 244, 245, 0.881);
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.laps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+  width: 380px;
+  border-radius: 5px;
+}
+p {
+  margin: 0%;
+  padding: 0%;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer {
+  margin-top: -45px;
+  color: rgb(53, 46, 46);
+  font-size: large;
+  font-weight: 700;
+  text-align: center;
+}

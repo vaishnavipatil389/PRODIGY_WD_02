@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <ul class="heading">
+      <li class="heading-list">S</li>
+      <li class="heading-list">T</li>
+      <li class="heading-list">O</li>
+      <li class="heading-list">P</li>
+      <li class="heading-list">W</li>
+      <li class="heading-list">A</li>
+      <li class="heading-list">T</li>
+      <li class="heading-list">C</li>
+      <li class="heading-list">H</li>
+    </ul>
+    <div class="stopwatch">
+      <div class="box">
+        <div class="hrs time">00</div>
+        <div class="colon time">:</div>
+        <div class="min time">00</div>
+        <div class="colon time">:</div>
+        <div class="sec time">00</div>
+        <div class="colon time">:</div>
+        <div class="ms time">00</div>
+      </div>
+      <div class="buttons">
+        <button class="start">START</button>
+        <!-- <button class="stop">Stop</button> -->
+        <button class="lap">LAP</button>
+        <button class="reset">RESET</button>
+      </div>
+      <hr style="width: 90%; height: 4px; margin-top: 5px" />
+      <div class="laps">
+        <p>LAPS</p>
+        <ul id="lapList"></ul>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">Made By Vaishnavi &hearts; Patil</div>
+    </footer>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
